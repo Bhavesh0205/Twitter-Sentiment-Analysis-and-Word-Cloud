@@ -36,7 +36,7 @@ setup_twitter_oauth(consumer_key ='Dfge9jJbSaRFiGYqe9FdTXl2y',
                     access_secret = 'CcbRYOWRxcmNdzCzKyR0NNdtWEJFG4qXwRifbKD2c71mb')
 
 #Fetching tweets
-string<-"iniesta"
+string<-"iniesta's transfer"
 tweets<-searchTwitter(string,n=1000,lang = "en")
 tweets.text <- sapply(tweets, function(x) x$getText())
 head(tweets.text,10)
